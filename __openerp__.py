@@ -41,7 +41,9 @@ Incluye:
     ],
     'init_xml': [],
     'demo_xml': [],
-    'test': [],
+    'test': [
+       'test/install.yml',
+    ],
     'update_xml': [
         'data/account_types.xml',
         'data/account_chart_respinsc.xml',

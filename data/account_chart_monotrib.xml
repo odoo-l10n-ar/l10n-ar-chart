@@ -1040,130 +1040,130 @@
             <field name="parent_id" eval="False"/>
         </record>
 
-        <record model="account.tax.code.template" id="mt_impuestos_nacionales">
+        <record model="account.tax.code.template" id="mt_tax_code_impuestos_nacionales">
             <field name="name">IMPUESTOS NACIONALES</field>
             <field name="code">01</field>
             <field name="sign">1</field>
             <field name="parent_id" ref="mt_tax_code_chart_root"/>
         </record>
 
-        <record model="account.tax.code.template" id="mt_impuestos_provinciales">
+        <record model="account.tax.code.template" id="mt_tax_code_impuestos_provinciales">
             <field name="name">IMPUESTOS PROVINCIALES</field>
             <field name="code">02</field>
             <field name="sign">1</field>
             <field name="parent_id" ref="mt_tax_code_chart_root"/>
         </record>
 
-                <record model="account.tax.code.template" id="mt_iibb_cf">
+                <record model="account.tax.code.template" id="mt_tax_code_iibb_cf">
                     <field name="code">029999</field>
                     <field name="name">IIBB Capital Federal</field>
                     <field name="sign">1</field>
-                    <field name="parent_id" ref="mt_impuestos_provinciales"/>
+                    <field name="parent_id" ref="mt_tax_code_impuestos_provinciales"/>
                 </record>
 
-                        <record model="account.tax.code.template" id="mt_iibb_cf_percepcion">
+                        <record model="account.tax.code.template" id="mt_tax_code_iibb_cf_percepcion">
                             <field name="code">029999:P</field>
                             <field name="name">Percepción IIBB Capital Federal</field>
                             <field name="sign">-1</field>
-                            <field name="parent_id" ref="mt_iibb_cf"/>
+                            <field name="parent_id" ref="mt_tax_code_iibb_cf"/>
                         </record>
 
-                        <record model="account.tax.code.template" id="mt_iibb_cf_retencion">
+                        <record model="account.tax.code.template" id="mt_tax_code_iibb_cf_retencion">
                             <field name="code">029999:R</field>
                             <field name="name">Retención IIBB Capital Federal</field>
                             <field name="sign">-1</field>
-                            <field name="parent_id" ref="mt_iibb_cf"/>
+                            <field name="parent_id" ref="mt_tax_code_iibb_cf"/>
                         </record>
 
-                        <record model="account.tax.code.template" id="mt_iibb_cf_facturado">
+                        <record model="account.tax.code.template" id="mt_tax_code_iibb_cf_facturado">
                             <field name="code">029999:F</field>
                             <field name="name">Facturado IIBB Capital Federal</field>
                             <field name="sign">0.02</field>
-                            <field name="parent_id" ref="mt_iibb_cf"/>
+                            <field name="parent_id" ref="mt_tax_code_iibb_cf"/>
                         </record>
 
-                <record model="account.tax.code.template" id="mt_iibb_ba">
+                <record model="account.tax.code.template" id="mt_tax_code_iibb_ba">
                     <field name="code">022429</field>
                     <field name="name">IIBB Prov. Buenos Aires</field>
                     <field name="sign">1</field>
-                    <field name="parent_id" ref="mt_impuestos_provinciales"/>
+                    <field name="parent_id" ref="mt_tax_code_impuestos_provinciales"/>
                 </record>
 
-						<record model="account.tax.code.template" id="mt_iibb_ba_percepcion">
+						<record model="account.tax.code.template" id="mt_tax_code_iibb_ba_percepcion">
 							<field name="code">022429:P</field>
 							<field name="name">Percepción IIBB Prov. Buenos Aires</field>
 							<field name="sign">-1</field>
-							<field name="parent_id" ref="mt_iibb_ba"/>
+							<field name="parent_id" ref="mt_tax_code_iibb_ba"/>
 						</record>
 
-						<record model="account.tax.code.template" id="mt_iibb_ba_retencion">
+						<record model="account.tax.code.template" id="mt_tax_code_iibb_ba_retencion">
 							<field name="code">022429:R</field>
 							<field name="name">Retención IIBB Prov. Buenos Aires</field>
 							<field name="sign">-1</field>
-							<field name="parent_id" ref="mt_iibb_ba"/>
+							<field name="parent_id" ref="mt_tax_code_iibb_ba"/>
 						</record>
 
-						<record model="account.tax.code.template" id="mt_iibb_ba_facturado">
+						<record model="account.tax.code.template" id="mt_tax_code_iibb_ba_facturado">
 							<field name="code">022429:F</field>
 							<field name="name">Facturado IIBB Prov. Buenos Aires</field>
 							<field name="sign">0.02</field>
-							<field name="parent_id" ref="mt_iibb_ba"/>
+							<field name="parent_id" ref="mt_tax_code_iibb_ba"/>
 						</record>
 
-                <record model="account.tax.code.template" id="mt_iibb_co">
+                <record model="account.tax.code.template" id="mt_tax_code_iibb_co">
                     <field name="code">022452</field>
                     <field name="name">IIBB Prov. Córdoba</field>
                     <field name="sign">1</field>
-                    <field name="parent_id" ref="mt_impuestos_provinciales"/>
+                    <field name="parent_id" ref="mt_tax_code_impuestos_provinciales"/>
                 </record>
 
-						<record model="account.tax.code.template" id="mt_iibb_co_percepcion">
+						<record model="account.tax.code.template" id="mt_tax_code_iibb_co_percepcion">
 							<field name="code">022452:P</field>
 							<field name="name">Percepción IIBB Prov. Córdoba</field>
 							<field name="sign">-1</field>
-							<field name="parent_id" ref="mt_iibb_co"/>
+							<field name="parent_id" ref="mt_tax_code_iibb_co"/>
 						</record>
 
-						<record model="account.tax.code.template" id="mt_iibb_co_retencion">
+						<record model="account.tax.code.template" id="mt_tax_code_iibb_co_retencion">
 							<field name="code">022452:R</field>
 							<field name="name">Retención IIBB Prov. Córdoba</field>
 							<field name="sign">-1</field>
-							<field name="parent_id" ref="mt_iibb_co"/>
+							<field name="parent_id" ref="mt_tax_code_iibb_co"/>
 						</record>
 
-						<record model="account.tax.code.template" id="mt_iibb_co_facturado">
+						<record model="account.tax.code.template" id="mt_tax_code_iibb_co_facturado">
 							<field name="code">022452:F</field>
 							<field name="name">Facturado IIBB Prov. Córdoba</field>
 							<field name="sign">0.02</field>
-							<field name="parent_id" ref="mt_iibb_co"/>
+							<field name="parent_id" ref="mt_tax_code_iibb_co"/>
 						</record>
 
-                <record model="account.tax.code.template" id="mt_iibb_sf">
+                <record model="account.tax.code.template" id="mt_tax_code_iibb_sf">
                     <field name="code">029998</field>
                     <field name="name">IIBB Prov. Santa Fé</field>
                     <field name="sign">1</field>
-                    <field name="parent_id" ref="mt_impuestos_provinciales"/>
+                    <field name="parent_id" ref="mt_tax_code_impuestos_provinciales"/>
                 </record>
 
-						<record model="account.tax.code.template" id="mt_iibb_sf_percepcion">
+						<record model="account.tax.code.template" id="mt_tax_code_iibb_sf_percepcion">
 							<field name="code">029998:P</field>
 							<field name="name">Percepción IIBB Prov. Santa Fé</field>
 							<field name="sign">-1</field>
-							<field name="parent_id" ref="mt_iibb_sf"/>
+							<field name="parent_id" ref="mt_tax_code_iibb_sf"/>
 						</record>
 
-						<record model="account.tax.code.template" id="mt_iibb_sf_retencion">
+						<record model="account.tax.code.template" id="mt_tax_code_iibb_sf_retencion">
 							<field name="code">029998:R</field>
 							<field name="name">Retención IIBB Prov. Santa Fé</field>
 							<field name="sign">-1</field>
-							<field name="parent_id" ref="mt_iibb_sf"/>
+							<field name="parent_id" ref="mt_tax_code_iibb_sf"/>
 						</record>
 
-						<record model="account.tax.code.template" id="mt_iibb_sf_facturado">
+						<record model="account.tax.code.template" id="mt_tax_code_iibb_sf_facturado">
 							<field name="code">029998:F</field>
 							<field name="name">Facturado IIBB Prov. Santa Fé</field>
 							<field name="sign">0.02</field>
-							<field name="parent_id" ref="mt_iibb_sf"/>
+							<field name="parent_id" ref="mt_tax_code_iibb_sf"/>
 						</record>
 
 #
@@ -1185,37 +1185,37 @@
 #
 
 # CABA
-        <record id="mt_iibb_cf_percepcion" model="account.tax.template">
+        <record id="mt_tax_iibb_cf_percepcion" model="account.tax.template">
             <field name="chart_template_id" ref="mt_l10nAR_chart_template"/>
             <field name="name">Percepción de Ingresos Brutos CABA</field>
             <field name="description">029999:P</field>
             <field eval="0.02" name="amount"/>
             <field name="type">percent</field>
-            <field name="tax_code_id" ref="mt_iibb_cf_percepcion"/>
+            <field name="tax_code_id" ref="mt_tax_code_iibb_cf_percepcion"/>
             <field name="account_collected_id" ref="mt_percepcion_iibb_cf"/>
             <field name="account_paid_id" ref="mt_percepcion_iibb_cf"/>
             <field name="type_tax_use">purchase</field>
         </record>
 
-        <record id="mt_iibb_cf_retencion" model="account.tax.template">
+        <record id="mt_tax_iibb_cf_retencion" model="account.tax.template">
             <field name="chart_template_id" ref="mt_l10nAR_chart_template"/>
             <field name="name">Retención de Ingresos Brutos CABA</field>
             <field name="description">029999:R</field>
             <field eval="0.02" name="amount"/>
             <field name="type">percent</field>
-            <field name="tax_code_id" ref="mt_iibb_cf_retencion"/>
+            <field name="tax_code_id" ref="mt_tax_code_iibb_cf_retencion"/>
             <field name="account_collected_id" ref="mt_retencion_iibb_cf"/>
             <field name="account_paid_id" ref="mt_retencion_iibb_cf"/>
             <field name="type_tax_use">purchase</field>
         </record>
 
-        <record id="mt_iibb_cf_facturado" model="account.tax.template">
+        <record id="mt_tax_iibb_cf_facturado" model="account.tax.template">
             <field name="chart_template_id" ref="mt_l10nAR_chart_template"/>
             <field name="name">Facturación de Ingresos Brutos CABA</field>
             <field name="description">029999:F</field>
             <field eval="0.00" name="amount"/>
             <field name="type">fixed</field>
-            <field name="base_code_id" ref="mt_iibb_cf_facturado"/>
+            <field name="base_code_id" ref="mt_tax_code_iibb_cf_facturado"/>
             <field name="account_collected_id" ref="mt_impuestos_iibb_cf"/>
             <field name="account_paid_id" ref="mt_impuestos_iibb_cf"/>
             <field name="type_tax_use">sale</field>
@@ -1223,37 +1223,37 @@
 
 # Prov. BsAs.
 
-        <record id="mt_iibb_ba_percepcion" model="account.tax.template">
+        <record id="mt_tax_iibb_ba_percepcion" model="account.tax.template">
             <field name="chart_template_id" ref="mt_l10nAR_chart_template"/>
             <field name="name">Percepción de Ingresos Brutos Prov. Buenos Aires</field>
             <field name="description">022429:P</field>
             <field eval="0.02" name="amount"/>
             <field name="type">percent</field>
-            <field name="tax_code_id" ref="mt_iibb_ba_percepcion"/>
+            <field name="tax_code_id" ref="mt_tax_code_iibb_ba_percepcion"/>
             <field name="account_collected_id" ref="mt_percepcion_iibb_ba"/>
             <field name="account_paid_id" ref="mt_percepcion_iibb_ba"/>
             <field name="type_tax_use">purchase</field>
         </record>
 
-        <record id="mt_iibb_ba_retencion" model="account.tax.template">
+        <record id="mt_tax_iibb_ba_retencion" model="account.tax.template">
             <field name="chart_template_id" ref="mt_l10nAR_chart_template"/>
             <field name="name">Retención de Ingresos Brutos Prov. Buenos Aires</field>
             <field name="description">022429:R</field>
             <field eval="0.02" name="amount"/>
             <field name="type">percent</field>
-            <field name="tax_code_id" ref="mt_iibb_ba_retencion"/>
+            <field name="tax_code_id" ref="mt_tax_code_iibb_ba_retencion"/>
             <field name="account_collected_id" ref="mt_retencion_iibb_ba"/>
             <field name="account_paid_id" ref="mt_retencion_iibb_ba"/>
             <field name="type_tax_use">purchase</field>
         </record>
 
-        <record id="mt_iibb_ba_facturado" model="account.tax.template">
+        <record id="mt_tax_iibb_ba_facturado" model="account.tax.template">
             <field name="chart_template_id" ref="mt_l10nAR_chart_template"/>
             <field name="name">Facturación Ingresos Brutos Prov. Buenos Aires</field>
             <field name="description">022429:F</field>
             <field eval="0" name="amount"/>
             <field name="type">fixed</field>
-            <field name="base_code_id" ref="mt_iibb_ba_facturado"/>
+            <field name="base_code_id" ref="mt_tax_code_iibb_ba_facturado"/>
             <field name="account_collected_id" ref="mt_impuestos_iibb_ba"/>
             <field name="account_paid_id" ref="mt_impuestos_iibb_ba"/>
             <field name="type_tax_use">sale</field>
@@ -1261,37 +1261,37 @@
 
 # Prov. Córdoba.
 
-        <record id="mt_iibb_co_percepcion" model="account.tax.template">
+        <record id="mt_tax_iibb_co_percepcion" model="account.tax.template">
             <field name="chart_template_id" ref="mt_l10nAR_chart_template"/>
             <field name="name">Percepción de Ingresos Brutos Prov. Córdoba</field>
             <field name="description">022452:P</field>
             <field eval="0.02" name="amount"/>
             <field name="type">percent</field>
-            <field name="tax_code_id" ref="mt_iibb_co_percepcion"/>
+            <field name="tax_code_id" ref="mt_tax_code_iibb_co_percepcion"/>
             <field name="account_collected_id" ref="mt_percepcion_iibb_co"/>
             <field name="account_paid_id" ref="mt_percepcion_iibb_co"/>
             <field name="type_tax_use">purchase</field>
         </record>
 
-        <record id="mt_iibb_co_retencion" model="account.tax.template">
+        <record id="mt_tax_iibb_co_retencion" model="account.tax.template">
             <field name="chart_template_id" ref="mt_l10nAR_chart_template"/>
             <field name="name">Retención de Ingresos Brutos Prov. Córdoba</field>
             <field name="description">022452:R</field>
             <field eval="0.02" name="amount"/>
             <field name="type">percent</field>
-            <field name="tax_code_id" ref="mt_iibb_co_retencion"/>
+            <field name="tax_code_id" ref="mt_tax_code_iibb_co_retencion"/>
             <field name="account_collected_id" ref="mt_retencion_iibb_co"/>
             <field name="account_paid_id" ref="mt_retencion_iibb_co"/>
             <field name="type_tax_use">purchase</field>
         </record>
 
-        <record id="mt_iibb_co_facturado" model="account.tax.template">
+        <record id="mt_tax_iibb_co_facturado" model="account.tax.template">
             <field name="chart_template_id" ref="mt_l10nAR_chart_template"/>
             <field name="name">Facturación Ingresos Brutos Prov. Córdoba</field>
             <field name="description">022452:F</field>
             <field eval="0" name="amount"/>
             <field name="type">fixed</field>
-            <field name="base_code_id" ref="mt_iibb_co_facturado"/>
+            <field name="base_code_id" ref="mt_tax_code_iibb_co_facturado"/>
             <field name="account_collected_id" ref="mt_impuestos_iibb_co"/>
             <field name="account_paid_id" ref="mt_impuestos_iibb_co"/>
             <field name="type_tax_use">sale</field>
@@ -1299,37 +1299,37 @@
 
 # Prov. Santa Fé
 
-        <record id="mt_iibb_sf_percepcion" model="account.tax.template">
+        <record id="mt_tax_iibb_sf_percepcion" model="account.tax.template">
             <field name="chart_template_id" ref="mt_l10nAR_chart_template"/>
             <field name="name">Percepción de Ingresos Brutos Prov. Santa Fé</field>
             <field name="description">029998:P</field>
             <field eval="0.02" name="amount"/>
             <field name="type">percent</field>
-            <field name="tax_code_id" ref="mt_iibb_sf_percepcion"/>
+            <field name="tax_code_id" ref="mt_tax_code_iibb_sf_percepcion"/>
             <field name="account_collected_id" ref="mt_percepcion_iibb_sf"/>
             <field name="account_paid_id" ref="mt_percepcion_iibb_sf"/>
             <field name="type_tax_use">purchase</field>
         </record>
 
-        <record id="mt_iibb_sf_retencion" model="account.tax.template">
+        <record id="mt_tax_iibb_sf_retencion" model="account.tax.template">
             <field name="chart_template_id" ref="mt_l10nAR_chart_template"/>
             <field name="name">Retención de Ingresos Brutos Prov. Santa Fé</field>
             <field name="description">029998:R</field>
             <field eval="0.02" name="amount"/>
             <field name="type">percent</field>
-            <field name="tax_code_id" ref="mt_iibb_sf_retencion"/>
+            <field name="tax_code_id" ref="mt_tax_code_iibb_sf_retencion"/>
             <field name="account_collected_id" ref="mt_retencion_iibb_sf"/>
             <field name="account_paid_id" ref="mt_retencion_iibb_sf"/>
             <field name="type_tax_use">purchase</field>
         </record>
 
-        <record id="mt_iibb_sf_facturado" model="account.tax.template">
+        <record id="mt_tax_iibb_sf_facturado" model="account.tax.template">
             <field name="chart_template_id" ref="mt_l10nAR_chart_template"/>
             <field name="name">Facturación Ingresos Brutos Prov. Santa Fé</field>
             <field name="description">029998:F</field>
             <field eval="0" name="amount"/>
             <field name="type">fixed</field>
-            <field name="base_code_id" ref="mt_iibb_sf_facturado"/>
+            <field name="base_code_id" ref="mt_tax_code_iibb_sf_facturado"/>
             <field name="account_collected_id" ref="mt_impuestos_iibb_sf"/>
             <field name="account_paid_id" ref="mt_impuestos_iibb_sf"/>
             <field name="type_tax_use">sale</field>
