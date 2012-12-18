@@ -22,7 +22,7 @@
     'name': 'Argentina - Plan Contable General',
     'version': '2.0',
     'author':   'OpenERP - Team de Localización Argentina',
-    'category': 'Localization/Argentina',
+    'category': 'Localisation/Account Charts',
     'website':  'https://launchpad.net/~openerp-l10n-ar-localization',
     'license': 'AGPL-3',
     'description': """
@@ -52,7 +52,6 @@ Incluye:
         'data/l10n_ar_wizard.xml',
         'data/modules_installer.xml',
     ],
-    'active': False,
     'installable': True,
 }
 
