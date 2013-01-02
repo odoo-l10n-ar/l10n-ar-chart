@@ -46,7 +46,7 @@
 			<field name="l10n_ar_base_vat"/><newline/>
 			<field name="l10n_ar_partner_title"/><newline/>
 			<field name="l10n_ar_states"/><newline/>
-			<field name="l10n_ar_treasury"/><newline/>
+			<field name="treasury"/><newline/>
 		    </group>
               </data>
             </field>
