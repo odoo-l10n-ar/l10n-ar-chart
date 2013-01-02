@@ -41,12 +41,12 @@
                         <attribute name='string'></attribute>
                     </xpath>
 		    <group colspan="8">
-			<field name="install_invoice"/><newline/>
-			<field name="install_bank"/><newline/>
-			<field name="install_vat"/><newline/>
-			<field name="install_partner_title"/><newline/>
-			<field name="install_states"/><newline/>
-			<field name="install_treasury"/><newline/>
+			<field name="l10n_ar_invoice"/><newline/>
+			<field name="l10n_ar_bank"/><newline/>
+			<field name="l10n_ar_base_vat"/><newline/>
+			<field name="l10n_ar_partner_title"/><newline/>
+			<field name="l10n_ar_states"/><newline/>
+			<field name="l10n_ar_treasury"/><newline/>
 		    </group>
               </data>
             </field>

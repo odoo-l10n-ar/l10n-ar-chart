@@ -26,40 +26,22 @@ class account_modules_ar_installer(osv.osv_memory):
     _name = 'account.modules.ar.installer'
     _inherit = 'res.config.installer'
     _columns = {
-        'install_invoice': fields.boolean(u'Facturación Argentina', required=True),
-        'install_bank': fields.boolean(u'Bancos de la Argentina', required=True),
-        'install_vat': fields.boolean(u'Verificación de CUIT', required=True),
-        'install_partner_title': fields.boolean(u'Denominaciones de Relaciones Comerciales', required=True),
-        'install_states': fields.boolean(u'Provincias Argentinas', required=True),
-        'install_treasury': fields.boolean(u'Cartera de Cheques', required=True),
+        'l10n_ar_invoice': fields.boolean(u'Facturación Argentina', required=True),
+        'l10n_ar_bank': fields.boolean(u'Bancos de la Argentina', required=True),
+        'l10n_ar_base_vat': fields.boolean(u'Verificación de CUIT', required=True),
+        'l10n_ar_partner_title': fields.boolean(u'Denominaciones de Relaciones Comerciales', required=True),
+        'l10n_ar_states': fields.boolean(u'Provincias Argentinas', required=True),
+        'treasury': fields.boolean(u'Cartera de Cheques', required=True),
     }
 
     _defaults= {
-        'install_invoice': True,
-        'install_bank': True,
-        'install_vat': True,
-        'install_partner_title': True,
-        'install_states': True,
-        'install_treasury': True,
+        'l10n_ar_invoice': True,
+        'l10n_ar_bank': True,
+        'l10n_ar_base_vat': True,
+        'l10n_ar_partner_title': True,
+        'l10n_ar_states': True,
+        'treasury': True,
     }
-
-    def modules_to_install(self, cr, uid, ids, context=None):
-        modules = super(account_modules_ar_installer, self).modules_to_install(
-            cr, uid, ids, context=context)
-
-        modules_ar = set()
-        for res in self.read(cr, uid, ids, context=context):
-            modules_ar |= set(['l10n_ar_invoice']) if res['install_invoice'] else set()
-            modules_ar |= set(['l10n_ar_bank']) if res['install_bank'] else set()
-            modules_ar |= set(['l10n_ar_base_vat']) if res['install_vat'] else set()
-            modules_ar |= set(['l10n_ar_partner_title']) if res['install_partner_title'] else set()
-            modules_ar |= set(['l10n_ar_states']) if res['install_states'] else set()
-            modules_ar |= set(['treasury']) if res['install_treasury'] else set()
-
-        self.logger.notifyChannel(
-            'installer', netsvc.LOG_DEBUG,
-            'Installing modules %s'%modules_ar)
-        return modules | modules_ar
 
 account_modules_ar_installer()
 
