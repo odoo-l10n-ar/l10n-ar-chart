@@ -35,7 +35,6 @@ Incluye:
 """,
     'depends': [
         'account',
-        'account_report',
         'base_iban',
         'account_chart',
     ],

@@ -26,20 +26,14 @@ class account_modules_ar_installer(osv.osv_memory):
     _name = 'account.modules.ar.installer'
     _inherit = 'res.config.installer'
     _columns = {
-        'l10n_ar_invoice': fields.boolean(u'Facturación Argentina', required=True),
-        'l10n_ar_bank': fields.boolean(u'Bancos de la Argentina', required=True),
-        'l10n_ar_base_vat': fields.boolean(u'Verificación de CUIT', required=True),
-        'l10n_ar_partner_title': fields.boolean(u'Denominaciones de Relaciones Comerciales', required=True),
-        'l10n_ar_states': fields.boolean(u'Provincias Argentinas', required=True),
-        'treasury': fields.boolean(u'Cartera de Cheques', required=True),
+        'l10n_ar_invoice': fields.boolean(u'Basic Invoice'),
+        'l10n_ar_wsafip_fe': fields.boolean(u'Electronic Invoice'),
+        'treasury': fields.boolean(u'Treasury'),
     }
 
     _defaults= {
         'l10n_ar_invoice': True,
-        'l10n_ar_bank': True,
-        'l10n_ar_base_vat': True,
-        'l10n_ar_partner_title': True,
-        'l10n_ar_states': True,
+        'l10n_ar_wsafip_fe': True,
         'treasury': True,
     }
 
