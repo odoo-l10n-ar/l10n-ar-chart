@@ -48,8 +48,8 @@
 
 	<record id="modules_ar_installer_todo" model="ir.actions.todo">
 		<field name="action_id" ref="action_modules_ar_installer"/>
-		<field name="sequence">12</field>
-		<field name="restart">always</field>
+		<field name="sequence">15</field>
+		<field name="type">automatic</field>
 	</record>
     </data>
 </openerp>
