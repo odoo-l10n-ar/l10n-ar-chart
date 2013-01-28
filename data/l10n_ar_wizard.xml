@@ -19,11 +19,11 @@
 <openerp>
     <data>
 
-        <record id="config_call_account_template" model="ir.actions.todo">
+        <!--record id="config_call_account_template" model="ir.actions.todo">
             <field name="action_id" ref="account.action_wizard_multi_chart"/>
 	    <field name="sequence">13</field>
 	    <field name="type">automatic</field>
-        </record>
+        </record-->
 
     </data>
 </openerp>
