@@ -19,7 +19,7 @@
 #
 ##############################################################################
 
-from osv import fields, osv
+from openerp.osv import fields, osv
 import netsvc
 
 class account_modules_ar_installer(osv.osv_memory):
