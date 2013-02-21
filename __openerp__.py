@@ -20,7 +20,7 @@
 ##############################################################################
 {
     'name': 'Argentina - Plan Contable General',
-    'version': '2.0',
+    'version': '2.7.155',
     'author':   'OpenERP - Team de Localización Argentina',
     'category': 'Localization/Account Charts',
     'website':  'https://launchpad.net/~openerp-l10n-ar-localization',
