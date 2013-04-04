@@ -27,6 +27,7 @@ class account_modules_ar_installer(osv.osv_memory):
     _columns = {
         'l10n_ar_invoice': fields.boolean(u'Basic Invoice'),
         'l10n_ar_wsafip_fe': fields.boolean(u'Electronic Invoice'),
+        'l10n_ar_banks': fields.boolean(u'Argentine Banks'),
         'treasury': fields.boolean(u'Treasury'),
     }
 
