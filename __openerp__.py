@@ -49,7 +49,6 @@ Incluye:
         'data/account_chart_monotrib.xml',
         'data/account_chart_coop.xml',
         'data/l10n_ar_wizard.xml',
-        'data/modules_installer.xml',
     ],
     'installable': True,
 }
