@@ -36,19 +36,19 @@ Incluye:
     'depends': [
         'account',
         'base_iban',
+        'l10n_ar_wizard',
         'account_chart',
     ],
     'init_xml': [],
     'demo_xml': [],
     'test': [
-       'test/install.yml',
+        'test/wizard.yml',
     ],
     'update_xml': [
         'data/account_types.xml',
         'data/account_chart_respinsc.xml',
         'data/account_chart_monotrib.xml',
         'data/account_chart_coop.xml',
-        'data/l10n_ar_wizard.xml',
     ],
     'installable': True,
 }
