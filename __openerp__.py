@@ -36,7 +36,6 @@ Incluye:
     'depends': [
         'account',
         'base_iban',
-        'l10n_ar_wizard',
         'account_chart',
     ],
     'init_xml': [],
@@ -49,6 +48,7 @@ Incluye:
         'data/account_chart_respinsc.xml',
         'data/account_chart_monotrib.xml',
         'data/account_chart_coop.xml',
+        'data/res_config_view.xml',
     ],
     'installable': True,
 }
