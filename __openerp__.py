@@ -40,14 +40,12 @@ Incluye:
     ],
     'init_xml': [],
     'demo_xml': [],
-    'test': [
-        'test/wizard.yml',
-    ],
+    'test': [],
     'update_xml': [
         'data/account_types.xml',
         'data/account_chart_respinsc.xml',
-        'data/account_chart_monotrib.xml',
-        'data/account_chart_coop.xml',
+#        'data/account_chart_monotrib.xml',
+#        'data/account_chart_coop.xml',
         'data/res_config_view.xml',
     ],
     'installable': True,
