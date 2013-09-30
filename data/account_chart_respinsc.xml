@@ -78,11 +78,11 @@
             <field name="parent_id" ref="ri_disponibilidades"/>
         </record>
 
-        <record model="account.account.template" id="ri_banco_misc">
+        <record model="account.account.template" id="ri_banco">
             <field name="type">other</field>
             <field name="code">11104</field>
-            <field name="user_type" ref="account.account_type_cash"/>
-            <field name="name">Banco misc</field>
+            <field name="user_type" ref="account.account_type_bank"/>
+            <field name="name">Banco</field>
             <field name="parent_id" ref="ri_disponibilidades"/>
         </record>
 
@@ -546,13 +546,13 @@
         <record model="account.account.template" id="ri_iva_debito_fiscal">
             <field name="type">other</field>
             <field name="code">21202</field>
-            <field name="user_type" ref="account.account_type_payable"/>
+            <field name="user_type" ref="account.account_type_expense"/>
             <field name="name">IVA débito fiscal</field>
             <field name="parent_id" ref="ri_deudas_fiscales"/>
         </record>
 
         <record model="account.account.template" id="ri_iva_a_pagar">
-            <field name="type">other</field>
+            <field name="type">payable</field>
             <field name="code">21203</field>
             <field name="user_type" ref="account.account_type_tax"/>
             <field name="name">IVA a pagar</field>
