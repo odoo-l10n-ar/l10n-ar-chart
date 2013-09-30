@@ -19,7 +19,7 @@
 <openerp>
     <data noupdate="True">
 
-        <record model="account.account.type" id="account.account_type_root">
+        <!--record model="account.account.type" id="account.account_type_root">
             <field name="name">View</field>
             <field name="code">view</field>
             <field name="close_method">none</field>
@@ -85,6 +85,6 @@
             <field name="code">cash</field>
             <field name="report_type">asset</field>
             <field name="close_method">balance</field>
-        </record>
+        </record-->
     </data>
 </openerp>
