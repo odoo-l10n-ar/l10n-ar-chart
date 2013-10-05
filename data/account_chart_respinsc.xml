@@ -87,9 +87,9 @@
         </record>
 
         <record model="account.account.template" id="ri_valores_a_depositar">
-            <field name="type">other</field>
+            <field name="type">liquidity</field>
             <field name="code">11105</field>
-            <field name="user_type" ref="account.data_account_type_cash"/>
+            <field name="user_type" ref="data_account_type_check"/>
             <field name="name">Valores a depositar</field>
             <field name="parent_id" ref="ri_disponibilidades"/>
         </record>
