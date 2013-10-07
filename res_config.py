@@ -18,37 +18,28 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-{
-    'name': 'Argentina - Plan Contable General',
-    'version': '2.7.155',
-    'author':   'OpenERP - Team de Localización Argentina',
-    'category': 'Localization/Account Charts',
-    'website':  'https://launchpad.net/~openerp-l10n-ar-localization',
-    'license': 'AGPL-3',
-    'description': """
-Plan contable genérico para la Argentina.
 
-Incluye:
-  - Wizard de configuración.
-  - Plantilla del plan contable genérico.
+from openerp.osv import fields, osv
 
-""",
-    'depends': [
-        'account',
-        'base_iban',
-        'account_chart',
-    ],
-    'init_xml': [],
-    'demo_xml': [],
-    'test': [],
-    'update_xml': [
-        'data/account_types.xml',
-        'data/account_chart_respinsc.xml',
-#        'data/account_chart_monotrib.xml',
-#        'data/account_chart_coop.xml',
-        'data/res_config_view.xml',
-    ],
-    'installable': True,
-}
+class account_config_settings(osv.osv_memory):
+    _name = 'account.config.settings'
+    _inherit = 'account.config.settings'
+
+    _columns = {
+        'module_l10n_ar_invoice': fields.boolean('Argentine Basic Invoice',
+                help="""Basic invoce data, logic and printing for Argentine.
+                This installs the module l10n_ar_invoice"""),
+        'module_l10n_ar_wsafip_fe': fields.boolean('Argentine Electronic Invoice',
+                help="""Enable invoices to be generated using AFIP web services.
+                This installs the module l10n_ar_wsafip_fe"""),
+        'module_l10n_ar_bank': fields.boolean('Argentine Banks',
+                help="""Complete the bank database, and let you complete the argentine bank list using BNA list by internet.
+                This install the module l10n_ar_banks"""),
+    }
+
+    _defaults= {
+    }
+
+account_config_settings()
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
