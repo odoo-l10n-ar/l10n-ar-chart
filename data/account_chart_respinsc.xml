@@ -147,7 +147,7 @@
             <field name="type">receivable</field>
             <field name="code">1144001010</field>
             <field name="user_type" ref="account.data_account_type_receivable"/>
-            <field name="name">Retencion impuestos a las ganancias sociedades</field>
+            <field name="name">Retención impuestos a las ganancias sociedades</field>
             <field name="parent_id" ref="ri_creditos_ganancias_sociedades"/>
         </record>
 
@@ -179,7 +179,7 @@
             <field name="type">receivable</field>
             <field name="code">1144001110</field>
             <field name="user_type" ref="account.data_account_type_receivable"/>
-            <field name="name">Retencion impuestos a las ganancias p. fisicas</field>
+            <field name="name">Retención impuestos a las ganancias p. fisicas</field>
             <field name="parent_id" ref="ri_creditos_ganancias_personas"/>
         </record>
 
@@ -232,10 +232,10 @@
         </record>
 
         <record model="account.account.template" id="ri_iva_retencion">
-            <field name="type">other</field>
+            <field name="type">receivable</field>
             <field name="code">1144003099</field>
             <field name="user_type" ref="account.data_account_type_receivable"/>
-            <field name="name">Retencion IVA</field>
+            <field name="name">Retención IVA</field>
             <field name="parent_id" ref="ri_credito_iva"/>
         </record>
 
@@ -267,7 +267,7 @@
             <field name="type">receivable</field>
             <field name="code">114400990020</field>
             <field name="user_type" ref="account.data_account_type_receivable"/>
-            <field name="name">Retencion ingresos brutos capital federal</field>
+            <field name="name">Retención ingresos brutos capital federal</field>
             <field name="parent_id" ref="ri_creditos_iibb_cf"/>
         </record>
 
@@ -291,7 +291,7 @@
             <field name="type">receivable</field>
             <field name="code">114400990120</field>
             <field name="user_type" ref="account.data_account_type_receivable"/>
-            <field name="name">Retencion ingresos brutos p. buenos aires</field>
+            <field name="name">Retención ingresos brutos p. buenos aires</field>
             <field name="parent_id" ref="ri_creditos_iibb_ba"/>
         </record>
 
@@ -315,7 +315,7 @@
             <field name="type">receivable</field>
             <field name="code">114400990320</field>
             <field name="user_type" ref="account.data_account_type_receivable"/>
-            <field name="name">Retencion ingresos brutos p. córdoba</field>
+            <field name="name">Retención ingresos brutos p. córdoba</field>
             <field name="parent_id" ref="ri_creditos_iibb_co"/>
         </record>
 
@@ -339,7 +339,7 @@
             <field name="type">receivable</field>
             <field name="code">114400991220</field>
             <field name="user_type" ref="account.data_account_type_receivable"/>
-            <field name="name">Retencion ingresos brutos p. santa fé</field>
+            <field name="name">Retención ingresos brutos p. santa fé</field>
             <field name="parent_id" ref="ri_creditos_iibb_sf"/>
         </record>
 
