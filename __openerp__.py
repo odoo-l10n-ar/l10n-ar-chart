@@ -47,6 +47,7 @@ Incluye:
 #        'data/account_chart_monotrib.xml',
 #        'data/account_chart_coop.xml',
         'data/res_config_view.xml',
+        'data/res_partner.xml',
     ],
     'installable': True,
 }
