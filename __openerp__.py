@@ -35,8 +35,11 @@ Incluye:
 """,
     'depends': [
         'account',
+        'base_vat',
         'base_iban',
         'account_chart',
+        'l10n_ar_states',
+        'l10n_ar_base_vat',
     ],
     'init_xml': [],
     'demo_xml': [],
