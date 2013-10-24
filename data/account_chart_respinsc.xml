@@ -288,7 +288,7 @@
         </record>
 
         <record model="account.account.template" id="ri_retencion_iibb_ba">
-            <field name="type">receivable</field>
+            <field name="type">other</field>
             <field name="code">114400990120</field>
             <field name="user_type" ref="account.data_account_type_receivable"/>
             <field name="name">Retención ingresos brutos p. buenos aires</field>
@@ -552,7 +552,7 @@
         </record>
 
         <record model="account.account.template" id="ri_iva_a_pagar">
-            <field name="type">payable</field>
+            <field name="type">other</field>
             <field name="code">21203</field>
             <field name="user_type" ref="account.data_account_type_payable"/>
             <field name="name">IVA a pagar</field>
