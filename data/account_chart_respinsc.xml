@@ -207,27 +207,11 @@
             <field name="parent_id" ref="ri_creditos_impuestos"/>
         </record>
 
-        <record model="account.account.template" id="ri_iva_credito_fiscal_10">
+        <record model="account.account.template" id="ri_iva_credito_fiscal">
             <field name="type">other</field>
             <field name="code">1144003040</field>
             <field name="user_type" ref="account.data_account_type_receivable"/>
-            <field name="name">IVA crédito fiscal 10.5 %</field>
-            <field name="parent_id" ref="ri_credito_iva"/>
-        </record>
-
-        <record model="account.account.template" id="ri_iva_credito_fiscal_21">
-            <field name="type">other</field>
-            <field name="code">1144003050</field>
-            <field name="user_type" ref="account.data_account_type_receivable"/>
-            <field name="name">IVA crédito fiscal 21%</field>
-            <field name="parent_id" ref="ri_credito_iva"/>
-        </record>
-
-        <record model="account.account.template" id="ri_iva_credito_fiscal_27">
-            <field name="type">other</field>
-            <field name="code">1144003060</field>
-            <field name="user_type" ref="account.data_account_type_receivable"/>
-            <field name="name">IVA crédito fiscal 27%</field>
+            <field name="name">IVA crédito fiscal</field>
             <field name="parent_id" ref="ri_credito_iva"/>
         </record>
 
@@ -1118,7 +1102,7 @@
 							<field name="parent_id" ref="ri_tax_code_iva"/>
 						</record>
 
-						<record model="account.tax.code.template" id="ri_tax_code_iva_compra0">
+						<record model="account.tax.code.template" id="ri_tax_code_iva_compras0">
 							<field name="code">01003000:C</field>
 							<field name="name">IVA Compra 0%</field>
 							<field name="sign">-1</field>
@@ -1305,6 +1289,32 @@
 #
 # IVA
 #
+        <record id="ri_tax_vat_0_ventas" model="account.tax.template">
+            <field name="chart_template_id" ref="ri_l10nAR_chart_template"/>
+            <field name="name">01003000:V</field>
+            <field name="description">IVA Ventas 0%</field>
+	    <field name="sequence">2</field>
+            <field eval="0.0" name="amount"/>
+            <field name="type">percent</field>
+            <field name="tax_code_id" ref="ri_tax_code_iva_venta10"/>
+            <field name="account_collected_id" ref="ri_iva_a_pagar"/>
+            <field name="account_paid_id" ref="ri_iva_a_pagar"/>
+            <field name="type_tax_use">sale</field>
+        </record>
+
+        <record id="ri_tax_vat_0_compras" model="account.tax.template">
+            <field name="chart_template_id" ref="ri_l10nAR_chart_template"/>
+            <field name="name">01003000:C</field>
+            <field name="description">IVA Compras 0%</field>
+	    <field name="sequence">2</field>
+            <field eval="0.0" name="amount"/>
+            <field name="type">percent</field>
+            <field name="tax_code_id" ref="ri_tax_code_iva_compras0"/>
+            <field name="account_collected_id" ref="ri_iva_credito_fiscal"/>
+            <field name="account_paid_id" ref="ri_iva_credito_fiscal"/>
+            <field name="type_tax_use">purchase</field>
+        </record>
+
         <record id="ri_tax_vat_10_ventas" model="account.tax.template">
             <field name="chart_template_id" ref="ri_l10nAR_chart_template"/>
             <field name="name">01003004:V</field>
@@ -1325,9 +1335,9 @@
 	    <field name="sequence">2</field>
             <field eval="0.105" name="amount"/>
             <field name="type">percent</field>
-            <field name="tax_code_id" ref="ri_tax_code_iva_venta10"/>
-            <field name="account_collected_id" ref="ri_iva_credito_fiscal_10"/>
-            <field name="account_paid_id" ref="ri_iva_credito_fiscal_10"/>
+            <field name="tax_code_id" ref="ri_tax_code_iva_compras10"/>
+            <field name="account_collected_id" ref="ri_iva_credito_fiscal"/>
+            <field name="account_paid_id" ref="ri_iva_credito_fiscal"/>
             <field name="type_tax_use">purchase</field>
         </record>
 
@@ -1351,9 +1361,9 @@
             <field name="name">01003005:C</field>
             <field eval="0.21" name="amount"/>
             <field name="type">percent</field>
-            <field name="tax_code_id" ref="ri_tax_code_iva_venta21"/>
-            <field name="account_collected_id" ref="ri_iva_credito_fiscal_21"/>
-            <field name="account_paid_id" ref="ri_iva_credito_fiscal_21"/>
+            <field name="tax_code_id" ref="ri_tax_code_iva_compras21"/>
+            <field name="account_collected_id" ref="ri_iva_credito_fiscal"/>
+            <field name="account_paid_id" ref="ri_iva_credito_fiscal"/>
             <field name="type_tax_use">purchase</field>
         </record>
 
@@ -1377,9 +1387,9 @@
             <field name="name">01003006:C</field>
             <field eval="0.27" name="amount"/>
             <field name="type">percent</field>
-            <field name="tax_code_id" ref="ri_tax_code_iva_venta27"/>
-            <field name="account_collected_id" ref="ri_iva_credito_fiscal_27"/>
-            <field name="account_paid_id" ref="ri_iva_credito_fiscal_27"/>
+            <field name="tax_code_id" ref="ri_tax_code_iva_compras27"/>
+            <field name="account_collected_id" ref="ri_iva_credito_fiscal"/>
+            <field name="account_paid_id" ref="ri_iva_credito_fiscal"/>
             <field name="type_tax_use">purchase</field>
         </record>
 
