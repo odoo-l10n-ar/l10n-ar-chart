@@ -1193,6 +1193,7 @@
             <field eval="0.02" name="amount"/>
             <field name="type">percent</field>
             <field name="tax_code_id" ref="mt_tax_code_iibb_cf_percepcion"/>
+            <field name="ref_tax_code_id" ref="mt_tax_code_iibb_cf_percepcion"/>
             <field name="account_collected_id" ref="mt_percepcion_iibb_cf"/>
             <field name="account_paid_id" ref="mt_percepcion_iibb_cf"/>
             <field name="type_tax_use">purchase</field>
@@ -1205,6 +1206,7 @@
             <field eval="0.02" name="amount"/>
             <field name="type">percent</field>
             <field name="tax_code_id" ref="mt_tax_code_iibb_cf_retencion"/>
+            <field name="ref_tax_code_id" ref="mt_tax_code_iibb_cf_retencion"/>
             <field name="account_collected_id" ref="mt_retencion_iibb_cf"/>
             <field name="account_paid_id" ref="mt_retencion_iibb_cf"/>
             <field name="type_tax_use">purchase</field>
@@ -1217,6 +1219,7 @@
             <field eval="0.00" name="amount"/>
             <field name="type">fixed</field>
             <field name="base_code_id" ref="mt_tax_code_iibb_cf_facturado"/>
+            <field name="ref_base_code_id" ref="mt_tax_code_iibb_cf_facturado"/>
             <field name="account_collected_id" ref="mt_impuestos_iibb_cf"/>
             <field name="account_paid_id" ref="mt_impuestos_iibb_cf"/>
             <field name="type_tax_use">sale</field>
@@ -1231,6 +1234,7 @@
             <field eval="0.02" name="amount"/>
             <field name="type">percent</field>
             <field name="tax_code_id" ref="mt_tax_code_iibb_ba_percepcion"/>
+            <field name="ref_tax_code_id" ref="mt_tax_code_iibb_ba_percepcion"/>
             <field name="account_collected_id" ref="mt_percepcion_iibb_ba"/>
             <field name="account_paid_id" ref="mt_percepcion_iibb_ba"/>
             <field name="type_tax_use">purchase</field>
@@ -1243,6 +1247,7 @@
             <field eval="0.02" name="amount"/>
             <field name="type">percent</field>
             <field name="tax_code_id" ref="mt_tax_code_iibb_ba_retencion"/>
+            <field name="ref_tax_code_id" ref="mt_tax_code_iibb_ba_retencion"/>
             <field name="account_collected_id" ref="mt_retencion_iibb_ba"/>
             <field name="account_paid_id" ref="mt_retencion_iibb_ba"/>
             <field name="type_tax_use">purchase</field>
@@ -1255,6 +1260,7 @@
             <field eval="0" name="amount"/>
             <field name="type">fixed</field>
             <field name="base_code_id" ref="mt_tax_code_iibb_ba_facturado"/>
+            <field name="ref_base_code_id" ref="mt_tax_code_iibb_ba_facturado"/>
             <field name="account_collected_id" ref="mt_impuestos_iibb_ba"/>
             <field name="account_paid_id" ref="mt_impuestos_iibb_ba"/>
             <field name="type_tax_use">sale</field>
@@ -1269,6 +1275,7 @@
             <field eval="0.02" name="amount"/>
             <field name="type">percent</field>
             <field name="tax_code_id" ref="mt_tax_code_iibb_co_percepcion"/>
+            <field name="ref_tax_code_id" ref="mt_tax_code_iibb_co_percepcion"/>
             <field name="account_collected_id" ref="mt_percepcion_iibb_co"/>
             <field name="account_paid_id" ref="mt_percepcion_iibb_co"/>
             <field name="type_tax_use">purchase</field>
@@ -1281,6 +1288,7 @@
             <field eval="0.02" name="amount"/>
             <field name="type">percent</field>
             <field name="tax_code_id" ref="mt_tax_code_iibb_co_retencion"/>
+            <field name="ref_tax_code_id" ref="mt_tax_code_iibb_co_retencion"/>
             <field name="account_collected_id" ref="mt_retencion_iibb_co"/>
             <field name="account_paid_id" ref="mt_retencion_iibb_co"/>
             <field name="type_tax_use">purchase</field>
@@ -1293,6 +1301,7 @@
             <field eval="0" name="amount"/>
             <field name="type">fixed</field>
             <field name="base_code_id" ref="mt_tax_code_iibb_co_facturado"/>
+            <field name="ref_base_code_id" ref="mt_tax_code_iibb_co_facturado"/>
             <field name="account_collected_id" ref="mt_impuestos_iibb_co"/>
             <field name="account_paid_id" ref="mt_impuestos_iibb_co"/>
             <field name="type_tax_use">sale</field>
@@ -1307,6 +1316,7 @@
             <field eval="0.02" name="amount"/>
             <field name="type">percent</field>
             <field name="tax_code_id" ref="mt_tax_code_iibb_sf_percepcion"/>
+            <field name="ref_tax_code_id" ref="mt_tax_code_iibb_sf_percepcion"/>
             <field name="account_collected_id" ref="mt_percepcion_iibb_sf"/>
             <field name="account_paid_id" ref="mt_percepcion_iibb_sf"/>
             <field name="type_tax_use">purchase</field>
@@ -1319,6 +1329,7 @@
             <field eval="0.02" name="amount"/>
             <field name="type">percent</field>
             <field name="tax_code_id" ref="mt_tax_code_iibb_sf_retencion"/>
+            <field name="ref_tax_code_id" ref="mt_tax_code_iibb_sf_retencion"/>
             <field name="account_collected_id" ref="mt_retencion_iibb_sf"/>
             <field name="account_paid_id" ref="mt_retencion_iibb_sf"/>
             <field name="type_tax_use">purchase</field>
@@ -1331,6 +1342,7 @@
             <field eval="0" name="amount"/>
             <field name="type">fixed</field>
             <field name="base_code_id" ref="mt_tax_code_iibb_sf_facturado"/>
+            <field name="ref_base_code_id" ref="mt_tax_code_iibb_sf_facturado"/>
             <field name="account_collected_id" ref="mt_impuestos_iibb_sf"/>
             <field name="account_paid_id" ref="mt_impuestos_iibb_sf"/>
             <field name="type_tax_use">sale</field>
