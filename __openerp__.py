@@ -44,7 +44,7 @@ Incluye:
     'init_xml': [],
     'demo_xml': [],
     'test': [],
-    'update_xml': [
+    'data': [
         'data/account_types.xml',
         'data/account_chart_respinsc.xml',
 #        'data/account_chart_monotrib.xml',
