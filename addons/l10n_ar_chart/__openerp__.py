@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-# Copyright (C) 2012 OpenERP - Team de Localización Argentina.
-# https://launchpad.net/~openerp-l10n-ar-localization
+# Copyright (C) 2014 Otra localización argentina de Odoo.
+# http://odoo-l10n-ar.github.io/
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@
 {
     'name': 'Argentina - Plan Contable General',
     'version': '2.7.155',
-    'author':   'OpenERP - Team de Localización Argentina',
+    'author':   'Otra localización argentina de Odoo.',
     'category': 'Localization/Account Charts',
     'website':  'https://launchpad.net/~openerp-l10n-ar-localization',
     'license': 'AGPL-3',
@@ -53,6 +53,7 @@ Incluye:
         'data/res_partner.xml',
     ],
     'installable': True,
+    'active': False,
 }
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
